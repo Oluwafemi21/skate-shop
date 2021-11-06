@@ -1,16 +1,17 @@
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins";
     color: ghostwhite;
-}
-
-
-body{
     margin: 0;
     padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
     margin-bottom: auto;
     background-color:#0392BF; 
 }
-
 
 /*icon*/
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
@@ -18,148 +19,157 @@ body{
 
 /*stars*/
 .checked {
-  color: yellow;
+  color: gold;
   padding-right: 5px;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
-
 .sidebar{
-    height: 100%;
-    position:fixed;
-    background-color: grey;
-    width: 5.5%;
-    float: left;
-    overflow: hidden;
-    justify-content: center;
+    background-color: #b4d5e4;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    justify-content: space-between;
 }
 
 .sidebar a {
   text-decoration: none;
   font-size: 15px;
   display: flex;
+  align-self: center;
+  justify-content: center;
   padding: 3px;
-  margin-top: 10px; 
+  margin:15px;
 }
 
 .logo{
-    position: absolute;
-    top: 20px;
-    left: 9px;
+    background: #ed48ba; 
+    color: white;
+    height: 35px;
+    width: 35px;
+    margin: 10px auto;
+    border-radius: 50%;
+    position: relative;
 }
 
-.move{
+.logo i {
+    font-size: 20px;
     position: absolute;
-    bottom: 25px;
-    left: 25px;
-    cursor: pointer;
+    left: 8px;
+    top: 20%;
+}
+
+.side-links i{
+    color: #0392bf;
 }
 
 i:hover{
-    color: black;
+    color: lightgray;
 }
 
 .main{
-    margin-left: 5.5%;
-    width: 80%;
-    margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-
 .container{
-    width: 80%;
-    overflow: hidden;
+    width: 95%;
     margin:0 auto;
 }
 
 nav{
-    width: 100%;
-    height: 50px;
-    padding-left:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 30px;
 }
 
-
-ul{
-    padding:0;
-}
-
-
-ul li{
+.nav-list li{
     list-style: none;
     display: inline-block;
-    float: left;
     line-height: 50px;
 }
 
-
-ul li a{
+.nav-list li a{
     text-decoration: none;
     font-size: 13px;
     color: white;
-    padding-right: 20px;
+    padding: 0 20px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 }
 
-a:hover{
-        color: black;
- }
+a:hover,.nav-list li a:hover{
+    color: lightgray
+}
 
 #icon{
-    float: right;
     line-height: 50px;
     cursor: pointer;
-    position: relative;
-    right: 10px;
-    
+    position: absolute;
+    right: 20px;
 }
 
 #icon:hover{
-    color:black;
+    color:lightgray
 }
 
 #showcase{
-    float: left;
-    width: 20%;
-    margin-top: 70px;
+    width: 45%;
     height: 100%;
-    margin-left: 100px;
+    position: relative;
+    margin: 0 80px;
 }
 
-.normal{
+
+#showcase img{
+    margin-left: 40px;
+}
+
+#showcase p{
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 48px;
+}
+
+.img-text {
+    font-size: 48px;
     position: absolute;
-    top: 420px;
-    left: 200px;
-    font-size: 50px;
-    letter-spacing: 0.2rem;
-    
+    margin-top: -60px;
+    letter-spacing: 0.5rem;
+    padding-left: 27px;
 }
-
-.bottom{
-    position: absolute;
-    letter-spacing: 0.2rem;
-    left: 250px;
-    font-size: 50px;
+  
+.img-text2 {
+    padding-left: 70px;
 }
-
+  
 
 #main-article{
     font-size: 13px;
-    float: right;
-    width: 40%;
-    margin-top: 40px;
+    width: 55%;
+    margin:20px;
     height: 100%;
-    margin-left: 10px;
-    margin-right: 30px;
 }
 
-
-#main-article #text{
-    margin-right: 20px;
+#main-article h1{
+    margin-right: 10px;
     font-size: 25px;
     text-transform: uppercase;
     color: white;
     letter-spacing: 0.1rem;
-    
+}
+
+.stars{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .grey{
@@ -167,12 +177,13 @@ a:hover{
     font-weight: lighter;
     font-size: 14px;
     padding-bottom:5px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 big{
     display: block;
     padding-top:5px;
+    margin-bottom: 25px;
 }
 
 #main-article p{
@@ -180,7 +191,6 @@ big{
     font-size: 15px;
     letter-spacing: 0.05rem;
 }
-
 
 label{
     display:block;
@@ -207,7 +217,6 @@ svg:hover{
     background-size: contain;
 }
 
-
 #second{
     display:block;
     margin-top: 5px;
@@ -217,7 +226,6 @@ svg:hover{
     font-size: 16px; 
     text-transform: uppercase;
 }
-
 
 select{
     margin-left: 45px;
@@ -236,7 +244,7 @@ select option[value="45-50"]{
     background-color: #0392BF;
 }
 
-button{
+.pay{
     margin-top: 40px;
     width: 166px;
     padding: 8px 10px 8px 10px;
@@ -247,86 +255,7 @@ button{
 }
 
 button:hover{
-    color:black;
+    color:lightgray;
 }
-
-
-
-/*Media Queries*/
-
-/*For Mobile*/
-@media screen and (max-width: 660px) {
-    .container,.main{
-    }
-    
-    ul li a {
-        font-size: 12px;
-        padding-right: 10px;
-    }
-    
-    
-    body{
-        width: 95%;
-        margin: 0 auto;
-    }
-    
-    .sidebar{
-        display:none;
-    }
-    
-    img{
-        width: 150px;
-        height: 190px;
-    }
-   
-    
-    #main-article{
-        float: none;
-        margin-top:40px;
-        width: 100%;
-    }
-    
-    #showcase{
-        float: none;
-        margin: 0;
-        width: 100%;
-    }
-    .grey{
-        padding-bottom: 15px;
-    }
-    
-    .normal{
-        font-size: 25px;
-        position: absolute;
-        top:200px;
-        left: 50px;
-    }
-    
-    .bottom{
-        font-size: 25px;
-        top:250px;
-        left:80px;
-    }
-    
-     #main-article #text{
-        margin: 0;
-        font-size: 15px;
-        padding-right:70px;
-    }
-    
-    .checked {
-          display: inline-block;
-    }
-    
-    small{
-        margin-top: auto;
-    }
-    
-    button{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-}
-
 
 
